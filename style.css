@@ -1,12 +1,51 @@
-body {
+img {
+    display: block;
+    margin: 0 auto 40px;
+  }
+  
+  body {
     min-height: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-button {
-    width: 200px;
-}
+  }
+  
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .left-align {
+    float: left;
+  }
+  
+  .right-align {
+    float: right;
+  }
+  
+  .square-button {
+    font-size: 15px;
+    display: inline-block;
+    margin: 10px;
+    width: 400px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #000;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    border: 2px solid #000;
+    transition: background-color 0.3s ease; /* hover 효과를 부드럽게 하기 위한 transition 추가 */
+  }
+  
+  .square-button:hover {
+    background-color: #ff77b5; /* hover 효과 색상 */
+    cursor: pointer; /* 마우스 커서 모양 변경 */
+  }
+  
+  .square-button:active {
+    background-color: #ff3399; /* 클릭 효과 색상 */
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* 클릭 효과에 따른 그림자 변경 */
+  }
